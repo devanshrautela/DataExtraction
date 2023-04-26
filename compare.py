@@ -6,7 +6,7 @@ import numpy as np
 with open("pure_test_validate.txt",'r',encoding='utf-8') as f:
     text1 = f.read()
     
-with open("output.txt",'r',encoding='utf-8') as f:
+with open("cancer_sentence.txt",'r',encoding='utf-8') as f:
     text2 = f.read()
 
 # Tokenize the strings into sentences or words
