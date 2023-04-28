@@ -1,0 +1,30 @@
+Tumor
+Neoplasm
+Carcinoma
+Metastasis
+Oncology
+Chemotherapy
+Radiation therapy
+Immunotherapy
+Genetic mutation
+Prognosis
+Diagnosis
+Screening
+Biopsy
+Stage
+Palliative care
+Cancer survivor
+Cancer recurrence
+Cancer prevention
+Mammogram
+Mastectomy
+Lumpectomy
+Estrogen receptor
+HER2/neu
+Triple-negative breast cancer
+Ductal carcinoma in situ (DCIS)
+Invasive ductal carcinoma (IDC)
+Inflammatory breast cancer
+Smoker
+Non-small cell lung cancer (NSCLC)
+Small cell lung cancer (SCLC)
