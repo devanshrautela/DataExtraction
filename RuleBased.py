@@ -25,7 +25,7 @@ print(data)
 import re
 
 # Define regular expression to match cancer-related terms
-cancer_regex = re.compile(r'cancer|tumor|malignancy', re.IGNORECASE)
+cancer_regex = re.compile(r'cancer|malignancy', re.IGNORECASE)
 
 # Read in unstructured text data from file
 with open('impure_test.txt', 'r',encoding='utf-8') as f:
