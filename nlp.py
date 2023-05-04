@@ -50,7 +50,7 @@ keywords = ['cancer',
 'neuroendocrine']
 
 # Read the txt file
-with open('impure_test_unstructured.txt', 'r', encoding='utf-8') as f:
+with open('impure_test_unstructured2.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 # Extract sentences related to cancer
