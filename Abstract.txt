@@ -1,42 +1,9 @@
-Rule Based Method (RuleBased.py)
+This research paper presents a data extraction method that provides a descriptive and deep learning process for extracting cancer-related data. The proposed method uses tokenization, padding, and a bidirectional LSTM model to process unstructured data and extract cancer-related information. The model is trained using saved data in an Excel file divided into a training set and a test set. The text file is tokenized using Keras Tokenizer and then padded to provide the appropriate length. The proposed model consists of an embedding layer, a bidirectional LSTM layer, and a density output layer.
+The model is trained using the Adam optimizer with binary cross entropy loss and evaluated using accuracy as the parameter.
 
-This code imports the regular expression (re)module and uses the re.compile() method to translate the regular expression to fit the cancer related context. It then reads the impure data from a file named "impure_test_unstructured2.txt" and uses a regular expression pattern to extract lines containing cancer-related content. The extracted paragraphs are stored in a file named cancer_paragraphs.
-Finally, the code uses the open() statement and a loop to write the output to a new file named "output.txt". Collectively, these instructions show how to use regular expressions to extract relevant data from unrelated data.
+To test the accuracy of data extraction, the training model is applied to new data containing inappropriate text. Compare the estimates with the dataset and use qualitative methods to evaluate the accuracy of the results. New data is loaded from the text and preprocessed in the same way as training and test data. Estimate threshold greater than 0.
+5 were considered cancer, and the manuscript was published in a newspaper for further analysis.
 
-Deep Learning Method (dl.py)
+Experimental results demonstrate the effectiveness of the proposed method for extracting cancer-related information from raw data. Evaluate the accuracy of the extracted data by comparing it with the standard data, proving the effectiveness of the model in capturing the relevant data. This research contributes to data mining by demonstrating an effective method to combine deep learning and NLP techniques to extract data accurately and refine it with raw data.
 
-This code uses deep learning to classify data into binary tags. It takes a file with two columns "label" and "text" and reads data from an Excel file named "train.excel".
-excel ".
-xlsx'. The code then preprocesses the text data by clearing it, splitting it into training and test sets, and tokenizing the words using the Tokenizer() method in tensorflow.keras.preprocessing.
-text module.
-followed by the pad_sequences() method to populate them to make sure they have the same length.
-
-The deep learning model is created by the tensorflow.keras layer, which consists of an input layer, an embedding layer, a bidirectional LSTM layer, and an output layer. The model was compiled using the adam optimizer, the binary_crossentropy loss function, and the accuracy metric.
-The model is trained on the training data and validated on the test data using the fit() method.
-After the model is trained, it is used to make predictions on new data in the text file named "impure_test_unstructured.txt". The file is prebuilt using the same token generator and padding technique as the file. Use the training model to make predictions on previous data and subtract the highest estimate from 0.
-5 and write to the file named "output2.txt".
-Text file '.
-
-Generally, these codes demonstrate the use of deep learning models to classify data into binary tags and make predictions on new data. It also provides many techniques for prewriting such as tokenization and padding.
-These rules are useful for researchers working on natural language processing and deep learning for text classification.
-
-Cosine Similarity Method (compare.py)
-
-This code uses the cosine similarity measure (a machine learning method) to compare the similarity between two word bags extracted from two texts. The word bag is created by breaking down strings into phrases or words and then creating a dictionary to represent the frequency of each word.
-The
-similarity measure is calculated using the cosine similarity formula, which compares the angle between two vectors in high space. The result is a value between 0 and 1, where 1 is similar and 0 is not.
-This approach is useful in data extraction as it allows identification of similar or related text and can help identify important information in many documents.
-
-However, one of the disadvantages of this rule is that it does not contain the content of the message. For example, two sentences may have the same word but have different meanings depending on the context in which they are used. In addition, the rule excludes the importance of certain words or phrases that may be more relevant to the topic studied.
-
-In summary, when the law specifies a method for comparing similarity of word bags, it is important to consider the limitations of the method and use it in conjunction with other techniques for more accurate data extraction.
-NLP
-
-NLP for Accuracy Analysis (nlp.py)
-
-for Accuracy Analysis This code is designed to extract cancer-related diseases from redundant data using a content-based approach. Number
-first download the appropriate Language Learning Kit (NLTK) and translate the cancer-related wordlist. It then reads the irrelevant text and destroys the cancer cells by searching for keywords in each sentence. Deleted sentences are saved in the new text.
-
-This code can be used in studies comparing the accuracy of different data extraction methods to identify cancer-related data from unstructured text.
-For example, the accuracy of this keyword can be compared to other methods such as machine learning models or custom models.
-These numerical results can be used as training data for machine learning models. Together, these codes provide a simple and effective way to extract cancer-related information from redundant text.
+Keywords: data extraction, text processing, deep learning, NLP, cancer-related information, tokenization, padding, LSTM, accuracy assessment.
