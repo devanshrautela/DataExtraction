@@ -1,0 +1,45 @@
+Methodology
+
+This research paper presents a methodology for extracting data from unstructured datasets using deep learning and machine learning techniques. The proposed approach focuses on extracting relevant cancer-related information from unstructured text data. The methodology includes data preprocessing, tokenization, model construction, training, and prediction. The effectiveness of the methodology is demonstrated through experiments using a labeled dataset and an unstructured text dataset. The results show promising performance in accurately identifying cancer-related information from unstructured data.
+
+A. Documentation and preparation:
+
+- Educational materials: Educational materials are compiled from Excel files and include examples and documents related to cancer.
+- Data preprocessing: Processing missing values ​​before the training process, converting keys to strings and splitting data into letter trains and clans.
+
+B. Tokenization and Fulfillment:
+
+- Tokenizer: The Tokenizer object is created from the Tokenizer class from the Keras library. The token generator learns a word and assigns unique numbers to the words in the text.
+- Text sequences: Use the tokenizer's text_to_sequences method to convert text data in training and test sequences to numeric sequences.
+- Padding: Fields are padded to ensure that lengths are long, with zero padding at the end of short fields.
+
+C. Model Architecture and Training:
+
+- Model building: A deep learning model is built using the Keras functional API. It includes an input layer, an embedding layer, a two-way LSTM layer, and an output density layer.
+- Build the model: Build the model using the appropriate optimizer, failover and evaluation.
+- Model Training: Train the model using the data training method. The training process involves several iterations with a small sample size.
+
+D. Retrieving and processing new data:
+
+- Raw data: Raw data is retrieved from external sources and contains information about cancer blood
+- Data processing: Text files are read and divided into lines for further processing.
+
+E. Prediction and Related Data Extraction:
+
+- Prediction: The model is trained to predict new unstructured data by converting it to a string of numbers using a token.
+- CorrelationThreshold: Compare each prediction with a threshold value (eg
+, 0.5) to determine its association with cancer.
+- Extraction of relevant data: Snippets of textual predictions exceeding a threshold value are considered relevant and removed for further analysis.
+
+F. Evaluation and Results:
+
+- Performance evaluation: The performance of the method is evaluated using appropriate indicators such as accuracy, precision, recall and F1 - score.
+- Experimental results: Experimental results are provided to show the effectiveness of the proposed method in extracting cancer-related data from irrelevant data.
+
+G. Results and Future Work:
+
+- Conclusion: The proposed method demonstrates the potential of deep learning and machine learning is not problematic in pruning relevant data from knowledge.
+- Future studies: Future research can focus on expanding to different dimensions and exploring other methods to improve the accuracy and performance of the data extraction paper.
+
+In summary, this research paper presents a method for data extraction using deep learning and machine learning.
+The proposed method demonstrates its effectiveness in extracting cancer-related information from irrelevant information. The proposed method can be used in many areas and can be the basis for further research on automatic data extraction from redundant data.
