@@ -44,7 +44,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 model.fit(train_padded, train_data['label'].values, epochs=8, batch_size=32, validation_data=(test_padded, test_data['label'].values))
 
 # Load the data from a text file
-with open('impure_test_unstructured.txt', 'r',encoding='utf-8') as f:
+with open('impure_test_unstructured2.txt', 'r',encoding='utf-8') as f:
     new_data = f.read().splitlines()
 
 # Convert the text data to sequences of integers and pad them
