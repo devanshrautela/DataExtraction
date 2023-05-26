@@ -10,20 +10,20 @@ with open("cancer_sentence.txt",'r',encoding='utf-8') as f:
     text2 = f.read()
 
 # Tokenize the strings into sentences or words
-words1 = sent_tokenize(text1.lower())
-words2 = sent_tokenize(text2.lower())
+sents1 = sent_tokenize(text1.lower())
+sents2 = sent_tokenize(text2.lower())
 
 # Create a set of all the unique words in both texts
-word_set = set(words1 + words2)
+word_set = set(sents1 + sents2)
 
 # Create dictionaries to represent the frequency of each word
 dict1 = {word:0 for word in word_set}
 dict2 = {word:0 for word in word_set}
 
-for sent in words1:
+for sent in sents1:
     dict1[sent] += 1
     
-for sent in words2:
+for sent in sents2:
     dict2[sent] += 1
 
 # Convert each dictionary to a bag-of-words representation
