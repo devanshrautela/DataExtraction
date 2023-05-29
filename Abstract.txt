@@ -1,9 +1,0 @@
-This research paper presents a data extraction method that provides a descriptive and deep learning process for extracting cancer-related data. The proposed method uses tokenization, padding, and a bidirectional LSTM model to process unstructured data and extract cancer-related information. The model is trained using saved data in an Excel file divided into a training set and a test set. The text file is tokenized using Keras Tokenizer and then padded to provide the appropriate length. The proposed model consists of an embedding layer, a bidirectional LSTM layer, and a density output layer.
-The model is trained using the Adam optimizer with binary cross entropy loss and evaluated using accuracy as the parameter.
-
-To test the accuracy of data extraction, the training model is applied to new data containing inappropriate text. Compare the estimates with the dataset and use qualitative methods to evaluate the accuracy of the results. New data is loaded from the text and preprocessed in the same way as training and test data. Estimate threshold greater than 0.
-5 were considered cancer, and the manuscript was published in a newspaper for further analysis.
-
-Experimental results demonstrate the effectiveness of the proposed method for extracting cancer-related information from raw data. Evaluate the accuracy of the extracted data by comparing it with the standard data, proving the effectiveness of the model in capturing the relevant data. This research contributes to data mining by demonstrating an effective method to combine deep learning and NLP techniques to extract data accurately and refine it with raw data.
-
-Keywords: data extraction, text processing, deep learning, NLP, cancer-related information, tokenization, padding, LSTM, accuracy assessment.

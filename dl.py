@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Input, Embedding, Bidirectional, LSTM, Dense
 from tensorflow.keras.models import Model
 
 # Load the data from an Excel file with two columns, 'label' and 'text'
-data = pd.read_excel('train.xlsx')
+data = pd.read_excel('input.xlsx')
 data = data.dropna(subset=['text'])
 data['text'] = data['text'].astype(str)
 # Split the data into training and testing sets
@@ -41,10 +41,10 @@ model = Model(inputs=inputs, outputs=output_layer)
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Train the model
-model.fit(train_padded, train_data['label'].values, epochs=8, batch_size=32, validation_data=(test_padded, test_data['label'].values))
+model.fit(train_padded, train_data['label'].values, epochs=4, batch_size=32, validation_data=(test_padded, test_data['label'].values))
 
 # Load the data from a text file
-with open('impure_test_unstructured2.txt', 'r',encoding='utf-8') as f:
+with open('impure_test_unstructured3.txt', 'r',encoding='utf-8') as f:
     new_data = f.read().splitlines()
 
 # Convert the text data to sequences of integers and pad them

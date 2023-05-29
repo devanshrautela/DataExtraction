@@ -1,9 +1,9 @@
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('maxent_ne_chunker')
-nltk.download('words')
+#nltk.download('punkt')
+#nltk.download('stopwords')
+#nltk.download('averaged_perceptron_tagger')
+#nltk.download('maxent_ne_chunker')
+#nltk.download('words')
 
 # Add more cancer-related keywords
 keywords = ['cancer',
@@ -50,7 +50,7 @@ keywords = ['cancer',
 'neuroendocrine']
 
 # Read the txt file
-with open('impure_test_unstructured2.txt', 'r', encoding='utf-8') as f:
+with open('impure_test_unstructured3.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 # Extract sentences related to cancer

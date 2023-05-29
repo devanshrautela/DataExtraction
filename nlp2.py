@@ -1,7 +1,7 @@
 import nltk
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('maxent_ne_chunker')
+#nltk.download('punkt')
+#nltk.download('averaged_perceptron_tagger')
+#nltk.download('maxent_ne_chunker')
 
 # Define cancer-related keywords
 keywords = [
@@ -15,12 +15,8 @@ keywords = [
 ]
 
 # Read the txt file
-try:
-    with open('impure_test_unstructured2.txt', 'r', encoding='utf-8') as f:
-        text = f.read()
-except FileNotFoundError:
-    print("Input file not found.")
-    exit(1)
+with open('impure_test_unstructured2.txt', 'r', encoding='utf-8') as f:
+    text = f.read()
 
 # Tokenize the text into sentences
 sentences = nltk.sent_tokenize(text)
@@ -45,12 +41,6 @@ for sentence in sentences:
             break
 
 # Store the sentences in a new txt file
-try:
-    with open('output11.txt', 'w', encoding='utf-8') as f:
-        for sentence in cancer_sentences:
-            f.write(sentence + '\n\n')
-except IOError:
-    print("Error occurred while writing the output file.")
-    exit(1)
-
-print("Extraction completed. The cancer-related sentences have been saved in 'output11.txt'.")
+with open('output11.txt', 'w', encoding='utf-8') as f:
+    for sentence in cancer_sentences:
+        f.write(sentence + '\n\n')
