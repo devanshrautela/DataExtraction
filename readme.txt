@@ -6,3 +6,4 @@ If you have any questions or feedback about our model or dataset, please feel fr
 
 MedicalText: https://www.kaggle.com/datasets/chaitanyakck/medical-text
 DataSet: https://drive.google.com/drive/folders/108cpEYoASpLwzdXFP2aZ-49ADgfaNrct?usp=sharing
+Drive : https://drive.google.com/drive/folders/1UtQiEAUvWVX5c9xA1HUpYE1JUhQ-Q0w9?usp=share_link
